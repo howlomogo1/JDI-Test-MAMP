@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/raleway/v9/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+body{
+	background-color: #f2f2f2;
+}
+
+/* To Do */
+/* Keep side navigation fixed to a certain width and keep responsive design */
+/* Add content correctly below the car images to fill the container to 100% */
+
+/* Font Styles */
+
+h6, h5, h4, h3, h2, h1 {
+	color: #fff;
+	font-family: 'Montserrat', Arial, serif;
+	letter-spacing: 1.5px;
+	margin:0px;
+	padding:0px;
+}
+
+p, a, li, ul, input {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation Styles */
+
+.navbar-default {
+	background-color: #4e5050;
+    border: none;
+}
+
+.navbar-default .navbar-collapse {
+    border: none !important;
+}
+
+.nav-headers{
+	margin-bottom: 15px;
+}
+
+/* Navigation collapse toggle */
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    margin-top:16px;
+    height: 38px;
+    background-color: #7a7c7c;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+}
+
+/* Menu toggle when menu is collapsed */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navsubitem {
+	font-size: 12px;
+	padding-left: 35px !important;
+}
+
+.navbar-header {
+	height: 70px;
+}
+
+.navbar-collapse {
+	padding: 0px;
+}
+
+.nav-stacked{
+	margin-bottom: 15px;
+}
+
+#logininfo {
+	padding: 15px;
+	margin-right:0px;
+	background-color:#848484;
+	height:70px;
+}
+
+#logininfo img {
+	margin-right: 15px;
+}
+
+/* Show this logo when the content is not collapsed */
+.logo {
+	height:40px;
+	margin-top:15px;
+	float:right;
+	margin-right: 10%;
+}
+
+/* Show this logo when the content is collapsed */
+.collapse-logo {
+	float:right;
+	height: 40px;
+	margin-top: 15px;
+	margin-right: 5%;
+}
+
+/* Navigation links */
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #54595a;
+    color: #ffffff;
+    border-left: solid 3px #ff0000;
+}
+
+.nav > li > a {
+	border-left: solid 3px #4e5050;
+    color: #bababa;
+}
+
+.nav > li > a.activenav {
+	text-decoration: none;
+    background-color: #54595a;
+    color: #ffffff;
+    border-left: solid 3px #0dc2ae;
+}
+
+/* Increase bottom margin of list item before nav headings */
+.nav > li:last-child
+{
+	margin-bottom:15px;
+}
+
+/* Nav search bar styles */
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #bababa;
+    background-color: #54595a;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+.has-feedback .form-control {
+    padding-left: 42.5px;
+    padding-right: 0px;
+}
+
+.has-feedback {
+    margin-right: 15px;
+}
+
+/* Search bar left glyphicon */
+.form-control-feedback {
+	color: #818181;
+    position: absolute;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+/* Used in the container-fluid to create a 100% height wrapper */
+.fillheight {
+	height: 100%;
+}
+
+.container-fluid{
+	margin:0px;
+	padding:0px;
+	height:100vh;
+}
+
+/* Right Column - Content Styles */
+
+/* The right column "content" header only displayed when the nav is not collapsed */
+.content-top{
+	height:70px;
+	background-color:#4e5050;
+}
+
+.upperrow {
+	width:90%;
+	margin:0 auto;
+	background-color:#fff;
+	border-left: solid 1px #bebebe;
+	border-right: solid 1px #bebebe;
+	padding:40px;
+}
+
+/* Font styles within the upperrow */
+#content-nav{
+	font-family: 'Montserrat', Arial, serif;
+	color: #bababa;
+}
+
+#content-title{
+	font-family: 'Raleway', sans-serif;
+	color: #000;
+	padding: 20px 0px 25px;
+}
+
+#content-subheader{
+	font-family: 'Raleway', sans-serif;
+	color: #bababa;
+}
+
+
+.carrowcontainer {
+	padding: 20px 0px;
+	border-top: solid 1px #d9d9d9;
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.carrow {
+	width:80%;
+	margin:0px auto;
+}
+
+.carcolumn {
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.carinfo {
+	background-color:#fff;
+	border-bottom:solid 2px #f5f5f5;
+	padding: 20px 5% 20px;
+}
+
+/* Font styles within the carinfo */
+.car-heading{
+	color:#b9babb;
+}
+
+.carinfo > hr {
+	margin:10px 0px;
+}
+
+.car-text{
+	color:#777777;
+	padding-bottom: 15px;
+}
+
+.carimglink{
+	color:#00bca6;
+}
+
+.carimglink:hover{
+	text-decoration: none;
+}
+
+
+/* I want this to fill the remaining height left from col-md-9 col-sm-9 fillheight */
+.lowerrow {
+	/*min-height: 100%;*/
+	width:90%;
+	margin:0 auto;
+	background-color:#fff;
+	border-left: solid 1px #bebebe;
+	border-right: solid 1px #bebebe;
+}
+
+/* Media enquirys */
+@media (max-width: 767px) {
+	.navbar {
+		/* Remove bottom margin when navigation is collapsed */
+    	margin-bottom: 0px;
+	}
+	.content-top{
+		/* Don't display the content-top when navigation is collapsed*/
+		display: none;
+	}
+	.sidenavbarcolumn {
+		padding: 0px;
+	}
+
+	#logininfo img {
+		margin-left: 15px;
+	}
+
+	.fillheight {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.upperrow {
+		width:100% !important;
+		border: none !important;
+	}
+
+	.carrowcontainer {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-top: 40px;
+	}
+
+	.carcolumn {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-default {
+		padding-left: 15px;
+	    background-color: transparent;
+	    border: none;
+	}
+	.collapse-logo {
+		display:none;
+	}
+	.sidenavbarcolumn {
+		padding: 0px;
+		height:100%;
+	}
+	.sidenavbar {
+		max-width:100%;
+		min-height: 100%;
+		background-color: #4e5050;
+	}
+	.nav > li > a {
+		margin-left: -15px;
+	}
+}
