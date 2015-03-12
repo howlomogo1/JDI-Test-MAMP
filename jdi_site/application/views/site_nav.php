@@ -28,7 +28,6 @@
                     </ul>
                     <ul class="nav nav-stacked">
                       <h5 class="nav-headers">NAVIGATION</h5>
-                        <!-- Check which link is active - (This is likely not the best way to do this - however I am noob) -->
                         <li><a <?php if($activelink == "home"){echo 'class="activenav"';} ?> href="<?php echo base_url();?>index.php/site/home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Homepage</a></li>
                         <ul class="nav nav-list">
                         <li style="margin:0px;" data-toggle="collapse" data-target="#test">
